@@ -57,7 +57,7 @@ async function ping() {
   const lastSample = samples[samples.length - 1];
   console.log("Actual sample: ");
   console.log(
-    `URL: ${URL}, RTT: ${lastSample.rtt} ms, DateTime: ${lastSample.timeStamp}`,
+    `URL: ${URL}, RTT: ${lastSample.rtt} ms, DateTime: ${lastSample.timeStamp}, success: ${lastSample.success}` 
   );
 
   // Udržení maximálně 100 vzorků v paměti
